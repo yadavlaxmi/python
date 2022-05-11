@@ -1,7 +1,15 @@
-# 10 intergers nd tr squares like 1 1
-#         2 4
-#         3 9 ...... And so on
-i=1
-while i<=10:
-		print(i**2)
-		i+=1
+# 2.Convert Character Matrix to single String;
+#         The original list is: [ ['g', 'f', 'g'], ['i', 's'], ['b', 'e', 's', 't'] ]
+
+# The String after join: gfgisbest
+
+list= [ ['g', 'f', 'g'], ['i', 's'], ['b', 'e', 's', 't'] ]
+a=["g","f","g"]
+b=["i","s"]
+c=["b","e","s","t"]
+list1=a+b+c
+
+i=0
+while i<len(list1):
+	print(list1[i],end=" ")
+	i+=1

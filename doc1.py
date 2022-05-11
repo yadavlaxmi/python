@@ -1,14 +1,15 @@
-# Odd numbers
+# 1.Iterate over both the values in a list and their indices
+# grocery_list = ['flour','cheese','carrots']
 
-# i=0
-# while i<=10:
-# 	i+=1
-# 	if i%2!=0:
-# 		print(i)
-  
-# From 1 to 10 natural numbers
-i=1
-while i<=10:
-	if i%1==0:
-		print(i)
-	i+=1
+# Output:
+
+# #=> 0: flour
+
+# #=> 1: cheese
+
+# #=> 2: carrots
+
+grocery_list = ['flour','cheese','carrot']
+print(grocery_list[0])
+print(grocery_list[1])
+print(grocery_list[2])
