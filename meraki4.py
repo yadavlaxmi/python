@@ -1,12 +1,40 @@
-# Q4.Python dictionary(sort by key) object ko json data ::mai convert karne ka program likho?
+# Question 4
 
-import json
-a={"4": 5, "6": 7, "1": 3, "2": 4}
-a=sorted(a.items())
-b={}
-for i in a:
-    b.update(a)
-print(type(b))
-c=json.dumps(b)
-print(c)
-print(type(c))
+# Write a program remove the first key value pair from a nested dictionary.
+# Example :-
+# Input :-
+
+#     Dic= {
+#   1: 'NAVGURUKUL',
+#   2: 'IN',  
+#     3:{ 
+#     'A' : 'WELCOME',
+#     'B' : 'To',
+#     'C' : 'DHARAMSALA'
+#    }
+#   }
+
+# Visualize
+# Output :-
+
+# Dic= {
+# 1: 'NAVGURUKUL',
+# 2: 'IN',
+# 3:
+# { 'B' : 'To',
+# 'C' : 'DHARAMSALA'
+# }
+# }
+
+
+dic= {
+    1: 'NAVGURUKUL',
+    2: 'IN',  
+    3:
+        {'A' : 'WELCOME',
+         'B' : 'To',
+         'C' : 'DHARAMSALA'}
+}
+del dic[3]['A']
+print(dic)
+    

@@ -1,33 +1,18 @@
-# 32.Given start and end of a range, write a Python program to print all positive numbers in given range.
-# Example:
 
-# Input: start = -4, end = 5
+# Q32.Write a Python program to get the key, value and item in a dictionary.
+# dict_num = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+# Sample Output:
 
-# Output: 0, 1, 2, 3, 4, 5
+# key  value  count                                                                                             
+# 1     10      1                                                                                               
+# 2     20      2                                                                                               
+# 3     30      3                                                                                               
+# 4     40      4                                                                                               
+# 5     50      5                                                                                               
+# 6     60      6
 
-
-# Input: start = -3, end = 4
-
-# Output: 0, 1, 2, 3, 4
-
-
-# A. 
-list=[-4,-3,-2,-1,0,1,2,3,4,5]
-i=0
-while i<len(list):
-	if -4<=list[i]<=5:
-		if list[i]>=0:
-			print(list[i],end=" ")
-	i+=1
-
-
-
-# B. 
-
-# list=[-3,-2,-1,0,1,2,3,4,]
-# i=0
-# while i<len(list):
-# 	if -4<=list[i]<=5:
-# 		if list[i]>=0:
-# 			print(list[i],end=" ")
-# 	i+=1
+dic= {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+count=0
+for i,j in dic.items():
+    count+=1
+    print(count,j,i)

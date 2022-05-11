@@ -1,6 +1,24 @@
-# Q6.Python object key unique key value ko access karne ka program likho?
+# Question 6
 
-import json
-x='{"a":1,"a":2,"a":3,"a": 4,"b": 1,"b": 2}'
-y=json.loads(x)
-print(y)
+# Write a program to remove duplicate keys.
+# Example :-
+# Input :-
+
+# dic={
+#  “ball”:”red”,
+#  ”bat”:4,
+#  ”wickets”:8,
+#  ”ball”green,
+#  ”bat”:3
+#  }
+
+# Visualize
+# Output :-
+
+# {“ball”:”red”,”bat”:4,”wickets”:8}
+
+
+dic={"ball":"red","bat":4,"wickets":8,"ball":"green","bat":3}
+print(dic)
+
+     

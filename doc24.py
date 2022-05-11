@@ -1,14 +1,14 @@
-# 24.Remove duplicates from a list.
-# List = [1,2,3,1,2,2]
+# Q24.
+# Write a Python program to combine values in python list of dictionaries. 
+# Sample data: [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
+# Expected Output: Counter({'item1': 1150, 'item2': 300})
 
-# Output: [1,2,3]
-
-
-n = [1,2,3,1,2,2]
-i=0
-duplicate=[ ]
-while i<len(n):
-	if n[i] not in duplicate:
-		duplicate.append(n[i])
-	i+=1
-print(duplicate)
+dic=[{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
+a={}
+for x in dic:
+    if x not in dic:
+        dic[x] = list()
+    else:
+        a=list()
+print(list)
+        

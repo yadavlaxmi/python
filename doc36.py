@@ -1,38 +1,12 @@
-# 36.
-# Write a Python program to join adjacent members of a given list.
-# Original list:
+# Q36.Write a Python program to match key values in two dictionaries. 
+# Sample dictionary: {'key1': 1, 'key2': 3, 'key3': 2}, {'key1': 1, 'key2': 2}
+# Expected output: key1: 1 is present in both x and y
 
-# ['1', '2', '3', '4', '5', '6', '7', '8']
-
-# Join adjacent members of a given list:
-
-# ['12', '34', '56', '78']
-
-# Original list:
-
-# ['1', '2', '3']
-
-# Join adjacent members of a given list:
-
-# ['12']
-
-# A. 
-list=['1', '2', '3', '4', '5', '6', '7', '8']
-i=0
-a=[ ]
-while i<len(list)-1:
-	b=(list[i])+(list[i+1])
-	a.append(b)
-	i+=2
-print(a)
-
-# B. 
-
-# list=['1', '2', '3']
-# i=0
-# a=[ ]
-# while i<len(list)-1:
-# 	b=(list[i])+(list[i+1])
-# 	a.append(b)
-# 	i+=2
-# print(a)
+x={'key1': 1, 'key2': 3, 'key3': 2}
+y={'key1': 1, 'key2': 2}
+for i in x:
+    for j in y:
+        a=x[i]
+        b=y[j]
+        if i==j and a==b:
+            print(i,":",a,"is presented in both x and y")

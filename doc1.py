@@ -1,14 +1,17 @@
-# 1.Write a Python program to count the number of strings where the string length is 2     or more and the first and last characters are the same from a given list of strings.
-#  ist=['abc', 'xyz', 'aba', '1221']
-# result= 2.
+# Q1.Write a Python program to combine two dictionary adding values for common keys.
+# d1 = {'a': 100, 'b': 200, 'c':300}
+# d2 = {'a': 300, 'b': 200, 'd':400}
+# Sample output: Counter({'a': 400, 'b': 400, 'd': 400, 'c': 300})
 
-def count():
-    a=['abc','xyz','aba','1221']
-    i=0
-    c=1
-    while i<len(a):
-        if a[i]==a[-1]:
-            c+=1
-        i+=1
-    print(c)
-count()
+d1 = {'a': 100, 'b': 200, 'c':300}
+d2 = {'a': 300, 'b': 200, 'd':400}
+d3={}
+for i in d1:
+    for j in d2:
+        if i in d2:
+            d3[i]=d2[i]+d1[i]
+        elif j not in d1:
+            d3[j]=d2[j]
+        elif i not in d2:
+            d3[i]=d1[i]
+print(d3)

@@ -1,11 +1,21 @@
-# Q40. Write a function For example, if we give 9119  the function should return  811181, as the  square of 9 is 81 and square of 1  is 1.
+# Original strings:
+# ['S001', 'S002', 'S003', 'S004']
+# ['Adina Park', 'Leyton Marsh', 'Duncan Boyle', 'Saim Richards']
+# [85, 98, 89, 92]
+# Nested dictionary:
+# [{'S001': {'Adina Park': 85}}, {'S002': {'Leyton Marsh': 98}}, {'S003': {'Duncan Boyle': 89}}, {'S004': {'Saim Richards': 92}}]
 
+list=['S001', 'S002', 'S003', 'S004']
+list1=['Adina Park', 'Leyton Marsh', 'Duncan Boyle', 'Saim Richards']
+list2=[85, 98, 89, 92]
+list3={}
+for i in list1:
+    for j in list2:
+        if i in list1:
+            list3[i]=list1[i]+list2[i]
+        elif i not in list1:
+            list3[j]=list1[j]
+# a=[{i:j} for i,j in zip{dic1,dic2}]
+# b=[{i,j} for i,j in zip{dic2,0}]
+print(list3)        
 
-def fun():
-    list=[9,1,1,9]
-    i=0
-    while i<len(list):
-        sqr=list[i]*list[i]
-        print(sqr,end="")
-        i+=1
-fun()

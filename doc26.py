@@ -1,15 +1,21 @@
-# 26. Write a function called fizz_buzz that takes a number.
-# 1.If the number is divisible by 3, it should return “Fizz”.
-# 2.If it is divisible by 5, it should return “Buzz”.
-# 3.If it is divisible by both 3 and 5, it should return “FizzBuzz”.
-# 4.Otherwise, it should return the same number.
+# Q26.
+# Write a Python program to print a dictionary in table format.
+# my_dict = {'C1':[1,2,3],'C2':[5,6,7],'C3':[9,10,11]}
 
-def fun():
-    a=int(input("num"))
-    if a%3==0:
-        print("fizz")
-    if a%5==0:
-        print("buzz")
-    if a%3 and a%5==0:
-        print("fizz buzz")
-fun()
+# Sample Output:
+
+# C1 C2 C3                                                                                                      
+# 1 5 9                                                                                                         
+# 2 6 10                                                                                                        
+# 3 7 11
+
+
+a= {'C1':[1,2,3],'C2':[5,6,7],'C3':[9,10,11]}
+for i in a:
+    print(i,end=" ")
+print("")
+for j in range(len(a)):
+    for k in a:
+        print(a[k][j],end=" ")
+    print()
+    

@@ -1,8 +1,20 @@
-# Q.3 Python object ko json string mai convert karne ka program likho?
+# question3
 
-import json
-a={"name": "David", "class": "I", "age": 6}
-print(type(a))
-b=json.dumps(a)
-print(b)
-print(type(b))
+# Ek program likhiye jo ki dictionaries ki values ka sum print kare.
+# Example :-
+# Input :-
+
+# my_dict = {
+#    'data1':100,
+#    'data2': -54,
+#    'data3': 247
+#    }
+
+# Visualize
+# Output :-293
+
+# my_dict={"data1":100,"data2":-54,"data3":247}
+# s=0
+# for i in my_dict:
+#     s=s+my_dict[i]
+# print(s)

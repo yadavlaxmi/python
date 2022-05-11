@@ -1,23 +1,13 @@
-# 47.Write a Python program to convert a given list of strings into list of lists.
-# Original list of strings:
+# Q47.
+# A Python Dictionary contains List as value. Write a Python program to clear the list values in the said dictionary. 
+# Original Dictionary:
+# {'C1': [10, 20, 30], 'C2': [20, 30, 40], 'C3': [12, 34]}
+# Clear the list values in the said dictionary:
+# {'C1': [], 'C2': [], 'C3': []}
 
-# ['Red', 'Maroon', 'Yellow', 'Olive']
-
-# Convert the said list of strings into list of lists:
-
-# [['R', 'e', 'd'], ['M', 'a', 'r', 'o', 'o', 'n'], ['Y', 'e', 'l', 'l', 'o', 'w'], ['O', 'l', 'i', 'v', 'e']
-
-
-
-a=['red','maroon','yellow','white']
-i=0
-b=[ ]
-while i<len(a):
-	j=0
-	m=[ ]
-	while j<len(a[i]):
-		m.append(a[i][j])
-		j+=1
-	i+=1
-	b.append(m)
-print(b)
+dic={'C1': [10, 20, 30], 'C2': [20, 30, 40], 'C3': [12, 34]}
+for i,j in dict(dic).items():
+    if j is None:
+        del dic[i]
+print(dic)
+        

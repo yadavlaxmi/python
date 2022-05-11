@@ -1,13 +1,12 @@
-# Q6.Write a Python program to print the even numbers from a given list.
-# Sample List : [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# Expected Result : [2, 4, 6, 8].
+# Q6.
+# Write a Python script to add a key to a dictionary.
 
-def fun(a):
-    i=1
-    even=[]
-    while i<len(a):
-        if i%2==0:
-            even.append(i) 
-        i+=1
-    print(even,end=" ")
-fun([1,2,3,4,5,6,7,8,9])
+# Sample Dictionary : {0: 10, 1: 20}
+# Expected Result : {0: 10, 1: 20, 2: 30}
+dic={0: 10, 1: 20}
+dic1={}
+for i in range(3):
+    dic[i]=i*10+10
+print(dic)
+    
+    

@@ -1,13 +1,8 @@
-# 3.Write a Python function to sum all the numbers in a list.
-# Sample List : (8, 2, 3, 0, 7)
-# Output : 20.
+# Q3.Write a Python script to generate and print a dictionary that contains a number (between 1 and n) in the form (x, x*x).
+# Sample input ( n = 5) :
+# Output : {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}.
 
-
-def add(a):
-    i=0
-    sum=0
-    while i<len(a):
-        sum=sum+a[i]
-        i+=1
-    print(sum)
-add([8,2,3,0,7])
+dic={}
+for i in range(1,6):
+    dic[i]=i**2
+print(dic)

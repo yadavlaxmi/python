@@ -1,11 +1,15 @@
-def fun(a):
-    i=0
-    c=0
-    while i<=a:
-        if i%a==0:
-            c+=1
-    if c==2:
-        print(c)
-    i+=1
-fun(20)
-            
+# Q30.Write a Python program to remove spaces from dictionary keys.
+# Original dictionary:  {'S  001': ['Math', 'Science'], 'S    002': ['Math', 'English']}
+# New dictionary:  {'S001': ['Math', 'Science'], 'S002': ['Math', 'English']} 
+dic={'S  001': ['Math', 'Science'], 'S    002': ['Math', 'English']}
+i=0
+space={}
+for i in dic:
+	j=0
+	st=''
+	while j<len(i):
+		if i[j]!=' ':
+			st+=i[j]
+		j+=1
+	space[st]=dic[i]
+print(space)

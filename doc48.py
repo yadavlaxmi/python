@@ -1,27 +1,15 @@
-# Q48. Two numbers are entered through the keyboard. Write a flowchart to find the value of the    first number raised to the power of another.
-# Sample Input
-# 3
-# 4
-# Sample Output
-# 81 (3x3x3x3)
+# Q48.Write a Python program to find the length of a given dictionary values. 
+# Original Dictionary:
+# {1: 'red', 2: 'green', 3: 'black', 4: 'white', 5: 'black'}
+# Length of dictionary values:
+# {'red': 3, 'green': 5, 'black': 5, 'white': 5}
+# Original Dictionary:
+# {'1': 'Austin Little', '2': 'Natasha Howard', '3': 'Alfred Mullins', '4': 'Jamie Rowe'}
+# Length of dictionary values:
+# {'Austin Little': 13, 'Natasha Howard': 14, 'Alfred Mullins': 14, 'Jamie Rowe': 10}
 
-# Sample Input
-# 5
-# 3
-# Sample Output 
-# 125 (5x5x5)
-# Sample Input
-# 6
-# 7
-# Sample Output
-# 279936 (6x6x6x6x6x6x6)
-
-
-def fun():
-    i=1
-    while i<=a:
-        b=i*i*i*i
-        print(i,"*",i,"*",i,"*",i,"=",b)
-        i+=1
-a=int(input("num"))
-fun()
+dic={1: 'red', 2: 'green', 3: 'black', 4: 'white', 5: 'black'}
+dic1={}
+for i in dic:
+    dic1[dic[i]]=len(dic[i])
+print(dic1)

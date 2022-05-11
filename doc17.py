@@ -1,10 +1,4 @@
-# 17. Write a function to tell user if he/she is able to vote or not.( Consider minimum age of voting to be 18. )
+# Q17.Write a Python program to sort a dictionary by key.
 
-def fun():
-    a=int(input("num"))
-    if a>=18:
-        print("eligible")
-    else:
-        print("not eligible")
-        
-fun()
+dict={"data9":10,"data7":20,"data8":30}
+print(sorted(dict.items()))

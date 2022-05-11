@@ -1,8 +1,12 @@
-# 22.average of 10 numbers
-a=0
-i=0
-while i<10:
-	n=int (input("num"))
-	a=a+n
-	i+=1
-print("average is :",a/10)
+# Q22. Write a Python program to create and display all combinations of letters, selecting each letter from a different key in a dictionary. Go to the editor
+# Sample data : {'1':['a','b'], '2':['c','d']}
+# Expected Output:
+# ac
+# ad
+# bc
+# bd
+
+dic={'1':['a','b'], '2':['c','d']}
+for i in dic["1"]:
+    for j in dic["2"]:
+        print(i+j)

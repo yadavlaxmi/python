@@ -1,27 +1,10 @@
-# Q35. Kids drink toddy.
-#     Teens drink coke.
-#     Young adults drink beer.
-#     Adults drink whisky.
-#     Make a function that receive age, and return what they drink.
-# Rules:-
-# Children under 14 old.
-# Teens under 18 old.
-# Young under 21 old.
-# Adults have 21 or more.
-# Examples: (Input --> Output)
+# Q35. Write a Python program to count the number of items in a dictionary value that is a list.
+# dict =  {'Alex': ['subj1', 'subj2', 'subj3'], 'David': ['subj1', 'subj2']}
+# Sample output: 5
 
-# 13 --> "drink toddy"
-# 17 --> "drink coke"
-# 18 --> "drink beer"
-# 20 --> "drink beer"
-# 30 --> "drink whisky".
-
-def fun():
-    a=int(input("num"))
-    if a<=19:
-        print("drink coke")
-    elif a<=24:
-        print("young drink beer")
-    elif a>=21:
-        print("adul drink whisky")
-fun()
+dict =  {'Alex': ['subj1', 'subj2', 'subj3'], 'David': ['subj1', 'subj2']}
+count=0
+for i in dict.values():
+    for j in i:
+        count+=1
+print(count)

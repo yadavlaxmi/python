@@ -1,17 +1,11 @@
-# 5.Write a Python function that takes a list and returns a new list with unique elements of the first list.
+# Q5.
+# Write a Python program to sort (ascending and descending) a dictionary by value.
 
+# Original dictionary :  {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+# Dictionary in ascending order by value :  [(0, 0), (2, 1), (1, 2), (4, 3), (3, 4)]
+# Dictionary in descending order by value :  {3: 4, 4: 3, 1: 2, 2: 1, 0: 0}
 
-# Sample List : [1,2,3,3,3,3,4,5]
-# Unique List : [1, 2, 3, 4, 5].
+dic={1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+a=sorted(dic.items())
+b={}
 
-
-def fun():
-    list=[1,2,3,3,3,3,4,5]
-    i=0
-    duplicate=[]
-    while i<len(list):
-        if list[i] not in duplicate:
-            duplicate.append(list[i])
-        i+=1
-    print(duplicate)
-fun()

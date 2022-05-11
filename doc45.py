@@ -1,25 +1,17 @@
-#Q45. Draw a flowchart to Take 10 numbers as input and create a list of the numbers from the user and update each element of the list according to below rule
-#If it is even, then multiply it by 100
-#If it is odd, then multiply it by -1 
-#Sample Input:
-    #23
-   # 42 
-  #  41 
- #   1
-#Sample Output:
-#    -23
-#4200 
- #   -41 
-#    -1
+# Q45.
+# Write a Python program to remove a specified dictionary from a given list. 
+# Original list of dictionary:
+# [{'id': '#FF0000', 'color': 'Red'}, {'id': '#800000', 'color': 'Maroon'}, {'id': '#FFFF00', 'color': 'Yellow'}, {'id': '#808000', 'color': 'Olive'}]
+# Remove id #FF0000 from the said list of dictionary:
+# [{'id': '#800000', 'color': 'Maroon'}, {'id': '#FFFF00', 'color': 'Yellow'}, {'id': '#808000', 'color': 'Olive'}]
 
-def fun():
-    list=[23,42,41,1]
-    i=0
-    while i<len(list):
-        a=int(input("num"))
-        if a%2==0:
-            print("even",list[i]*100)
-        else:
-            print("odd",list[i]*-1)
-        i+=1
-fun()
+dic=[{'id': '#FF0000', 'color': 'Red'}, {'id': '#800000', 'color': 'Maroon'}, {'id': '#FFFF00', 'color': 'Yellow'}, {'id': '#808000', 'color': 'Olive'}]
+a=input("any char")
+for i in range(len(dic)):
+    if dic[i]["id"]==a:
+        del dic[i]
+        break
+    elif dic[i]["color"]==a:
+        del dic[i]
+        break
+print(dic)

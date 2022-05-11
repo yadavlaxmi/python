@@ -1,41 +1,18 @@
-# 44.Write a Python program to add a number to each element in a given list of numbers.
-# Original lists:
+# Q44.Write a Python program to split a given dictionary of lists into list of dictionaries.
+# Original dictionary of lists:
+# {'Science': [88, 89, 62, 95], 'Language': [77, 78, 84, 80]}
+# Split said dictionary of lists into list of dictionaries:
+# [{'Science': 88, 'Language': 77}, {'Science': 89, 'Language': 78}, {'Science': 62, 'Language': 84}, {'Science': 95, 'Language': 80}]
 
-# [3, 8, 9, 4, 5, 0, 5, 0, 3]
-
-# Add 3 to each element in the said list:
-
-# [6, 11, 12, 7, 8, 3, 8, 3, 6]
-
-# Original lists:
-
-# [3.2, 8, 9.9, 4.2, 5, 0.1, 5, 3.11, 0]
-
-# Add 0.51 to each element in the said list:
-
-# [3.71, 8.51, 10.41, 4.71, 5.51, 0.61, 5.51, 3.62, 0.51]
-
-# A. 
-list=[3, 8, 9, 4, 5, 0, 5, 0, 3]
-i=0
-sum=0
-a=[ ]
-while i<len(list):
-	sum=list[i]+3
-	a.append(sum)
-	i+=1
-print(a)
-
-
-
-# B. 
-
-# list=[3.2, 8, 9.9, 4.2, 5, 0.1, 5, 3.11, 0]
-# i=0
-# sum=0
-# a=[ ]
-# while i<len(list):
-# 	sum=list[i]+0.51
-# 	a.append(sum)
-# 	i+=1
-# print(a)
+dic={'Science': [88, 89, 62, 95], 'Language': [77, 78, 84, 80]}
+dic0={}
+dic1={}
+dic2={}
+dic3={}
+for i in dic:
+    dic0[i]=dic[i][0]
+    dic1[i]=dic[i][1]
+    dic2[i]=dic[i][2]
+    dic3[i]=dic[i][3]
+print([dic0,dic1,dic2,dic3])
+    

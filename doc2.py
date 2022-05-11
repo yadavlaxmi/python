@@ -1,15 +1,17 @@
-# 2.Convert Character Matrix to single String;
-#         The original list is: [ ['g', 'f', 'g'], ['i', 's'], ['b', 'e', 's', 't'] ]
+# Q2. Write a Python program to create a dictionary from a string.
+# Note: Track the count of the letters from the string.
+# Sample string : 'w3resource'
+# Output: {'w': 1, '3': 1, 'r': 2, 'e': 2, 's': 1, 'o': 1, 'u': 1, 'c': 1}
 
-# The String after join: gfgisbest
-
-list= [ ['g', 'f', 'g'], ['i', 's'], ['b', 'e', 's', 't'] ]
-a=["g","f","g"]
-b=["i","s"]
-c=["b","e","s","t"]
-list1=a+b+c
-
+a="w3resource"
+b=list(a)
 i=0
-while i<len(list1):
-	print(list1[i],end=" ")
-	i+=1
+dic={}
+for i in a:
+    if i in dic:
+        dic[i]+=1
+    else:
+        dic[i]=1
+print(dic)
+    
+        
