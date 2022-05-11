@@ -1,7 +1,14 @@
-# 27. Write a program to print the following series till n terms.1 4 9 16 25 _ _ _ _ _ n terms
-a=int(input("num"))
-i=0
-while i<a:
-	i+=1
-	square=i*i
-	print(i,"square",square)
+# 27. Write a function for checking the speed of drivers. This function should have one parameter: speed.
+# 1.If speed is less than 70, it should print “Ok”.
+# 2.Otherwise, for every 5km above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points. For example, if the speed is 80, it should print: “Points: 2”.
+# 3.If the driver gets more than 12 points, the function should print: “License suspended”
+
+def fun():
+    a=int(input("num"))
+    if a<=70:
+        print("ok")
+    if a>70:
+        print("points 2")
+    if a<12:
+        print("license suspended")
+fun()

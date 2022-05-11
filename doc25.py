@@ -1,40 +1,21 @@
-# 25.Given a List, extract all elements whose frequency is greater than K.
-# Input: test_list = [4, 6, 4, 3, 3, 4, 3, 4, 3, 8], K = 3
-
-# Output: [4, 3]
-
-# Explanation: Both elements occur 4 times.
-
-# Input: test_list = [4, 6, 4, 3, 3, 4, 3, 4, 6, 6], K = 2
-
-# Output: [4, 3, 6]
-
-# Explanation: Occur 4, 3, and 3 times respectively
+# 25. Given a list of numbers, write a Python program to count positive and negative numbers in a List using function.
+# Example:
+# list1 = [2, -7, 5, -64, -14]
+# Output: pos = 2, neg = 3
 
 
-# A. 
-n=[4,6,4,3,3,4,3,4,3,8]
-i=0
-a=[ ]
-while i<len(n):
-	j=0
-	c=0
-	while j<=i:
-		if n[i]==n[j]:
-			c+=1
-		j+=1
-	if c>3:
-		a.append(n[i])
-	i+=1
-print(a)
-
-
-# B. 
-# n=[4,6,4,3,3,4,3,4,6,6]
-# k=2
-# a=[ ]
-# while k<len(n):
-# 	if n[k] not in a:
-# 		a.append(n[k])
-# 	k+=1
-# print(a)
+def fun():
+    list=[2,-7,5,-64,-14]
+    i=0
+    count=0
+    count1=0
+    while i<len(list):
+        if list[i]>0:
+            count+=1
+        else:
+            count1+=1
+        i+=1
+    print("positive=",count)
+    print("negative=",count1)
+fun()
+            

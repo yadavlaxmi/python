@@ -1,32 +1,15 @@
-# 9.Find the First Maximum, Second maximum, Third maximum number from the List.
+# 9.Write a Python program to generate and print a list of first and last 5 elements where 
+#   the values are square of numbers between 1 and 30 (both included).
+# Output :-([1, 4, 9, 16, 25], [676, 729, 784, 841, 900]).
 
 
-
-a=[10,20,30,40,50,60]
-i=0
-max=0
-while i<len(a):
-	if a[i]>max:
-		max=a[i]
-	i+=1
-
-max1=0
-j=0
-while j<len(a):
-	if a[j]<max:
-		if a[j]>max1:
-			max1=a[j]
-	j+=1
-
-max2=0
-k=0
-while k<len(a):
-	if a[k]<max1:
-		if a[k]>max2:
-			max2=a[k]
-	k+=1
-print(max)
-print(max1)
-print(max2)
-
-
+def sqr():
+    i=1
+    squr=[]
+    while i<=30:
+        a=i*i
+        squr.append(a)
+        i+=1
+    print(squr,end=" ")
+    
+sqr()

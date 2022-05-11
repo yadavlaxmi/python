@@ -1,13 +1,17 @@
-# 5.Count unique values inside a list.
-# input_list = [1, 2, 2, 5, 8, 4, 4, 8]
+# 5.Write a Python function that takes a list and returns a new list with unique elements of the first list.
 
-# Count = 5 #because [1,2,5,8,4] are unique values.
 
-input_list = [1,2,2,5,8,4,4,8]
-i=0
-duplicate=[ ]
-while i<len(input_list):
-	if input_list[i] not in duplicate:
-		duplicate.append(input_list[i])
-	i+=1
-print(duplicate)
+# Sample List : [1,2,3,3,3,3,4,5]
+# Unique List : [1, 2, 3, 4, 5].
+
+
+def fun():
+    list=[1,2,3,3,3,3,4,5]
+    i=0
+    duplicate=[]
+    while i<len(list):
+        if list[i] not in duplicate:
+            duplicate.append(list[i])
+        i+=1
+    print(duplicate)
+fun()

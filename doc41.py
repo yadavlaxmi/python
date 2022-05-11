@@ -1,30 +1,27 @@
-# 43.Write a Python program to insert a specified element in a given list after every nth element.
-# Original list:
-
-# [1, 3, 5, 7, 9, 11, 0, 2, 4, 6, 8, 10, 8, 9, 0, 4, 3, 0]
-
-# Insert 20 in said list after every 4 th element:
-
-# [1, 3, 5, 7, 20, 9, 11, 0, 2, 20, 4, 6, 8, 10, 20, 8, 9, 0, 4, 20, 3, 0]
-
-# Original list:
-
-# ['s', 'd', 'f', 'j', 's', 'a', 'j', 'd', 'f', 'd']
-
-# Insert Z in said list after every 3 th element:
-
-# ['s', 'd', 'f', 'Z', 'j', 's', 'a', 'Z', 'j', 'd', 'f', 'Z', 'd']
-
-# A. 
-
-list=[1, 3, 5, 7, 9, 11, 0, 2, 4, 6, 8, 10, 8, 9, 0, 4, 3, 0]
-i=0
-a=4
-list1=[]
-while i<len(list):
-	if i==a:
-		list1.append(20)
-		a+=4
-	list1.append(list[i])
-	i+=1
-print(list1)
+#Q41. Write a Python program to find the list with maximum and minimum length.
+#Original list:[[0], [1, 3], [5, 7], [9, 11], [13, 15, 17]]
+#List with maximum length of lists:
+#(3, [13, 15, 17])
+#List with minimum length of lists:
+#(1, [0])
+def fun():
+    list=[[0], [1, 3], [5, 7], [9, 11], [13, 15, 17]]
+    i=0
+    c=0
+    max=[]
+    while i<len(list):
+        if list[i]>max:
+            max=list[i]
+            c+=1
+        i+=1
+    j=0
+    c1=0
+    min=list[j]
+    while j<len(list):
+        if list[j]>max:
+            min=list[j]
+            c1+=1
+        j+=1
+    print((len(max),max))
+    print((len(min),min))
+fun()

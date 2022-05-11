@@ -1,12 +1,10 @@
-# 17. Write a program to check whether a number is Armstrong or not.
-a=int(input("num"))
-b=a
-sum=0
-while a>0:
-	c=a%10
-	sum=sum+c*c*c
-	a=a//10
-if sum==b:
-	print("amstrong")
-else:
-	print("not amstrong")
+# 17. Write a function to tell user if he/she is able to vote or not.( Consider minimum age of voting to be 18. )
+
+def fun():
+    a=int(input("num"))
+    if a>=18:
+        print("eligible")
+    else:
+        print("not eligible")
+        
+fun()

@@ -1,14 +1,9 @@
-# 29.Remove empty List from List                
-# The original list is: [5, 6, [], 3, [], [], 9]
+# Q29. Write a function that returns the sum of multiples of 3 and 5 between 0 and limit (parameter). For example, if limit is 20, it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
 
-# List after empty list removal: [5, 6, 3, 9]
-
-
-list=[5,6,[],3,[],[],9]
-a=[ ]
-for i in list:
-	if i!=[ ]:
-		a.append(i)
-	else:
-		continue
-print(a)
+def mul(a,b):
+    i=3
+    while i<=20:
+        if i%a==0 or i%5==0:
+            print(i,end="")
+        i+=1
+mul(3,5)

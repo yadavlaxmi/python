@@ -1,8 +1,11 @@
-# 40.Write a Python program to sum of two given integers. However, if the sum is between 15 to 20 it will return 20
-a=int(input("num"))
-b=int(input("num"))
-sum=a+b
-if sum>15 and sum<20:
-	print("20")
-else:
-	print("not between")
+# Q40. Write a function For example, if we give 9119  the function should return  811181, as the  square of 9 is 81 and square of 1  is 1.
+
+
+def fun():
+    list=[9,1,1,9]
+    i=0
+    while i<len(list):
+        sqr=list[i]*list[i]
+        print(sqr,end="")
+        i+=1
+fun()
